@@ -1,0 +1,31 @@
+{
+  "name": "sample-platformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development && node dist/main.js",
+    "test": "npm run build:prod && ex-test -d ./dist -t ./test/integration/ex-tests.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jsdom": "^21.1.6",
+    "canvas": "^2.11.2",
+    "excalibur": "0.28.1",
+    "jsdom": "^23.0.1",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "node-self": "^1.0.2"
+  },
+  "devDependencies": {
+    "@excaliburjs/testing": "0.25.0",
+    "copy-webpack-plugin": "11.0.0",
+    "jest-matchmedia-mock": "^1.1.0",
+    "ts-loader": "9.4.4",
+    "typescript": "4.5.4",
+    "webpack": "5.88.2",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "4.15.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
