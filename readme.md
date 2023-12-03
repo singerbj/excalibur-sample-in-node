@@ -1,18 +1,14 @@
-# Excalibur Platformer Sample
+# Excalibur Platformer Sample running in Node.js env
 
-Play sample [here](https://excaliburjs.com/sample-platformer)
+Notably, take a look at 'src/browserShim.ts' that allows for this to work. It's a massive hack but kinda pumped I got it to work.
 
-![sample-animation](./assets/sample.gif)
+I had to make a bunch of modifications to the sample-platformer project to get it to work, hence why im just pushing to a seperate repo.
+
+Using Node.js v18.7.1
 
 ## Running locally
 
 * Using [nodejs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
 * Run the `npm install` to install dependencies
-* Run the `npm run dev` to run the development server to test out changes
-   * [Webpack](https://webpack.js.org/) will build the [typescript](https://www.typescriptlang.org/) into javascript
-   * [Webpack dev server](https://webpack.js.org/configuration/dev-server/) will host the script in a little server on http://localhost:9000/
-
-## Building bundles
-
-* Run `npm run build:dev` to produce javascript bundles for debugging in the `dist/` folder
-* Run `npm run build:prod` to produce javascript bundles for production (minified) in the `dist/` folder
+* Run the `npm run start` to build the project and immediately start it
+  
